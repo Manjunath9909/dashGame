@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using TMPro;
 using UnityEngine;
 
 public class uiHandler : MonoBehaviour
@@ -8,12 +8,12 @@ public class uiHandler : MonoBehaviour
     public Canvas gameplayCanvas;
     public Canvas startGameCanvas;
     public Canvas endGameCanvas;
-
+    public TextMeshProUGUI scoreCard;
     void Update()
     {
         if (Input.GetKey(KeyCode.Escape) && startGameCanvas.enabled == false)
         {
-            endGame();
+            endGame("Paused", "");
         }
     }
 
@@ -28,6 +28,7 @@ public class uiHandler : MonoBehaviour
     public void startGame()
     {
         print("start game");
+        gameRunner.startLevel();
         startGameCanvas.enabled = false;
         gameplayCanvas.enabled = true;
         endGameCanvas.enabled = false;
@@ -56,10 +57,15 @@ public class uiHandler : MonoBehaviour
         endGameCanvas.enabled = false;
     }
 
-    public void endGame()
+    public void endGame(String message1, String message2)
     {
         startGameCanvas.enabled = false;
         gameplayCanvas.enabled = false;
         endGameCanvas.enabled = true;
+    }
+
+    public void updateScore(int score)
+    {
+        scoreCard.text = "Score : " + score.ToString();
     }
 }

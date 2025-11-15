@@ -9,20 +9,37 @@ public class mainObject : MonoBehaviour
     float playerHealth;
     public float jumpIntesity = 10f;
     public GameObject player2;
-
-    //imports for obstacles
-    public obstacle obstaclePrefab;
-
+    public bool gameRunning;
     //imports for ui
     public uiHandler UIHandler;
+    float scoreStep = 1.5f;
+    float lastUpdate = 0;
+    int score = 0;
     void Start()
     {
+        gameRunning = false;
         playerHealth = 10;
+        lastUpdate = 0f;
+        score = 0;
     }
 
-    void Awake()
+    void Update()
     {
-        setupObstaclePool();
+        if (gameRunning)
+        {
+            lastUpdate += Time.deltaTime;
+            if (lastUpdate >= scoreStep)
+            {
+                score += 1;
+                UIHandler.updateScore(score);
+                lastUpdate -= scoreStep;
+            }
+        }
+        else
+        {
+            //mostly to handle new game and level reset
+            UIHandler.updateScore(0);
+        }
     }
 
     public void takeDamage(Collision2D collision)
@@ -32,9 +49,9 @@ public class mainObject : MonoBehaviour
             playerHealth -= 1;
             player1HealthBar.fillAmount = playerHealth / 10;
         }
-        else
+        else if (playerHealth == 0)
         {
-            UIHandler.restartGame();
+            UIHandler.endGame("You died!", "High score was : " + score.ToString());
         }
     }
 
@@ -43,14 +60,20 @@ public class mainObject : MonoBehaviour
         player1RigidBody.AddForce(Vector2.up * jumpIntesity, ForceMode2D.Impulse);
     }
 
-    public void setupObstaclePool()
-    {
-        myPool.setUpMyPool(obstaclePrefab, 10, "obstacle");
-    }
-
     public void resetLevel()
     {
+        UIHandler.updateScore(0);
         playerHealth = 10;
         player1HealthBar.fillAmount = 1;
+        score = 0;
+    }
+
+    public void startLevel()
+    {
+        UIHandler.updateScore(0);
+        gameRunning = true;
+        playerHealth = 10;
+        player1HealthBar.fillAmount = 1;
+        score = 0;
     }
 }
