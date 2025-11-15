@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7680927611230764355}
   - component: {fileID: 1430506255081793069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2882479287289981669}
-  m_Layer: 0
+  - component: {fileID: 7764376937095877202}
+  m_Layer: 6
   m_Name: obstacle2ConeVariant1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 2683663364585559800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2665, y: 179, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -121,6 +122,19 @@ Transform:
   - {fileID: 5764703622749800014}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7764376937095877202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683663364585559800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ae14dae7ee19648b408d894aa501e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 15
 --- !u!1 &2999822507598227161
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831894185294201266}
   - component: {fileID: 1547507540495015536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6045154929401269950}
   - component: {fileID: 6413089108197925522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5764703622749800014}
   - component: {fileID: 5976097158549438915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5775697382320142928}
   - component: {fileID: 8627097433542665854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8502908112657246030}
   - component: {fileID: 8105696241690509909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

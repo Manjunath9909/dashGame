@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6910264497004492293}
   - component: {fileID: 7726811855226515801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065500009981607027}
   - component: {fileID: 2534691302631019461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2295460587928892219}
   - component: {fileID: 4208616968162330222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5750138639481007993}
   - component: {fileID: 6880633914575599104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8548463078524240860}
   - component: {fileID: 7841519044139655546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: middleObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

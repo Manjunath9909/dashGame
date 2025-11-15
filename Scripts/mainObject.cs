@@ -46,11 +46,13 @@ public class mainObject : MonoBehaviour
     {
         if (playerHealth > 0)
         {
+            print("took damage");
             playerHealth -= 1;
             player1HealthBar.fillAmount = playerHealth / 10;
         }
         else if (playerHealth == 0)
         {
+            gameRunning = false;
             UIHandler.endGame("You died!", "High score was : " + score.ToString());
         }
     }
@@ -62,6 +64,7 @@ public class mainObject : MonoBehaviour
 
     public void resetLevel()
     {
+        gameRunning = true;
         UIHandler.updateScore(0);
         playerHealth = 10;
         player1HealthBar.fillAmount = 1;

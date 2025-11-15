@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5662956008879329377}
   - component: {fileID: 3285026315990102817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904365930216076958}
   - component: {fileID: 2183191126901083226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2580240647712676015}
-  m_Layer: 0
+  - component: {fileID: -1890364263717330447}
+  m_Layer: 6
   m_Name: obstacle2ConeVariant2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,6 +199,19 @@ Transform:
   - {fileID: 904365930216076958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1890364263717330447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552426607484500062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ae14dae7ee19648b408d894aa501e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 15
 --- !u!1 &4663709610052609187
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4037928883383470113}
   - component: {fileID: 8393325315888845111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9153650565826329294}
   - component: {fileID: 6491555010030628666}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2507589503046266717}
   - component: {fileID: 3461936888456784598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516104437820835024}
   - component: {fileID: 3307293798848773254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: damageCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
