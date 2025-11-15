@@ -351,3 +351,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 15
+  speef: 10
+  releaseValve: {fileID: 0}
